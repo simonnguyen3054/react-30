@@ -1,0 +1,45 @@
+.drumkit_background {
+  background: linear-gradient(#c7c7c778, #726f6fab, transparent),
+    url("../../assets/images/drum_kit_bg.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+
+  .keys {
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .key {
+    border: 0.2rem solid black;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem;
+    transition: all 0.07s ease;
+    width: 10rem;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    text-shadow: 0 0 0.5rem black;
+  }
+
+  kbd {
+    display: block;
+    font-size: 4rem;
+  }
+
+  .playing {
+    transform: scale(1.1);
+    border-color: #fcb92f;
+    box-shadow: 0 0 1rem #fcb92f;
+  }
+
+  .sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #fcb92f;
+  }
+}
