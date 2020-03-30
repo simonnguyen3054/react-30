@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef, createRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { data as Data } from "./data";
 import AudioSource from "./AudioSource";
 import "./style.scss";
