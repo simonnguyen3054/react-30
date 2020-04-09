@@ -12,7 +12,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 10px -10px rgba(0, 0, 0, 0.6);
     position: relative;
     left: 60rem;
     top: 5rem;
@@ -61,6 +60,25 @@
     .sec-hand {
       width: 45%;
       left: 5%;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .clockBackground {
+    background-position: 40%;
+
+    .clock {
+      width: 20rem;
+      height: 20rem;
+      position: relative;
+      left: 10rem;
+      top: 2rem;
+
+      &-inner {
+        width: 19rem;
+        height: 19rem;
+      }
     }
   }
 }
