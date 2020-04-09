@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JsAndCssClock should render the clock on the wall 1`] = `
+<JsAndCssClock>
+  <div
+    className="clockBackground"
+  >
+    <div
+      className="clock"
+    >
+      <div
+        className="clock-inner"
+      >
+        <div
+          className="clock-face"
+        >
+          <div
+            className="hand hour-hand"
+            style={
+              Object {
+                "transform": "rotate(90deg)",
+              }
+            }
+          />
+          <div
+            className="hand min-hand"
+            style={
+              Object {
+                "transform": "rotate(90deg)",
+              }
+            }
+          />
+          <div
+            className="hand sec-hand"
+            style={
+              Object {
+                "transform": "rotate(90deg)",
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</JsAndCssClock>
+`;
