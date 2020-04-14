@@ -1,12 +1,13 @@
 import React from "react";
-import "./App.css";
-import { DrumKit, JsAndCssClock } from "./components";
+import "./App.scss";
+import { DrumKit, JsAndCssClock, CssVariables } from "./components";
 
 function App() {
   return (
     <div className="App">
       <DrumKit />
       <JsAndCssClock />
+      <CssVariables />
     </div>
   );
 }

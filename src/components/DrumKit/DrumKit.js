@@ -12,7 +12,7 @@ import {
   ride,
   snare,
   tink,
-  tom
+  tom,
 } from "../../assets/sounds";
 
 const DrumKit = () => {
@@ -25,17 +25,17 @@ const DrumKit = () => {
     ride,
     snare,
     tink,
-    tom
+    tom,
   };
   const keysRef = useRef([]); //create an empty array to store div.keys elements
   const [pressedKeyCode, setPressedKeyCode] = useState();
   useEffect(() => {
     //check when transitionend, remove the classname "playing" from div.key element
-    keysRef.current.forEach(key =>
+    keysRef.current.forEach((key) =>
       key.addEventListener("transitionend", removeTransition)
     );
   }, []);
-  const removeTransition = event => {
+  const removeTransition = (event) => {
     if (event.propertyName !== "transform") return; //skip if not a transform
     setPressedKeyCode(null);
   };
@@ -47,14 +47,14 @@ const DrumKit = () => {
           <div
             key={item.key}
             className={clsx("key", pressedKeyCode === item.key && "playing")} //add classname "playing" on a pressed div.key element
-            ref={key => (keysRef.current[i] = key)} //assign a list of div.key elements
+            ref={(key) => (keysRef.current[i] = key)} //assign a list of div.key elements
           >
             <kbd>{item.letter}</kbd>
             <span className="sound">{item.type}</span>
             <AudioSource
               keyCode={item.key}
               src={audioHashMap[item.type]}
-              handleKeyOnPlayed={keyCode => setPressedKeyCode(keyCode)}
+              handleKeyOnPlayed={(keyCode) => setPressedKeyCode(keyCode)}
             />
           </div>
         ))}

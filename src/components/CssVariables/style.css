@@ -1,0 +1,5 @@
+.css-variable-container {
+  background: linear-gradient(to bottom right, rgb(230, 97, 97), #f06d06);
+  width: 100%;
+  min-height: 100vh;
+}
